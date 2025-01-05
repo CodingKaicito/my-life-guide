@@ -116,3 +116,22 @@ nav .nav_links li a:hover {
     padding: 3rem 0;
     line-height: 1.8rem;
 }
+
+.social-icons {
+  display: flex;
+  align-items: center; /* Vertically centers the logo and other content */
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle; /* Ensures the image aligns properly with text */
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.5) invert(0); /* Slight color shift */
+}
