@@ -57,7 +57,7 @@ nav .nav_content {
 }
 
   nav .nav_content .logo {
-    font-size: auto;
+    font-family: LuckiestGuyFont;
     font-size: clamp(24px, 5vw, 25px); /* Minimum 24px, adjusts with viewport width, max 25px */
     color: #fff;
 }
