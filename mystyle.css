@@ -36,10 +36,10 @@ a:link {
     left: 0;
     top: 0;
     width: 100%;
-    height: 10%;
+    height: auto;
     background: #000000;
     z-index: 1000; /* Ensures navbar is always on top */
-
+    text-align: center;
 }
 
 nav.sticky {
@@ -47,19 +47,19 @@ nav.sticky {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-  nav .nav_content { 
-    height: 100%;
-    max-width: 1440px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav .nav_content {
+  height: auto; /* Adjust height dynamically */
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Ensure vertical alignment of content */
 }
 
   nav .nav_content .logo {
-    font-size: 35px;
-    font-weight: 500;
-    color:  #fff;
+    font-size: auto;
+    font-size: clamp(24px, 5vw, 25px); /* Minimum 24px, adjusts with viewport width, max 25px */
+    color: #fff;
 }
 
   nav .nav_content .nav_links {
@@ -68,21 +68,27 @@ nav.sticky {
     text-decoration: none;
 }
 
+  nav ul {
+    margin: 0;
+    padding: 0;
+}
+
 nav .nav_links li {
   list-style: none;
-  margin: 18px;
-  padding: 10px;
-  border: 1px solid #fff; /* White border around each li */
+  margin: 10px; /* Reduce margin */
+  padding: 5px; /* Adjust padding to avoid unnecessary spacing */
+  font-size: 15px;
+  border: 1px solid #fff;
   border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Only transition background-color and text color */
+  transition: 0.3s ease;
 }
 
 nav .nav_links li a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: auto;
   font-weight: 500;
   color: #fff;
-  padding: 10px;
+  padding: 6px;
   transition: color 0.3s ease; /* Only transition color */
 }
 
