@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PASSWORD BRO</title>
+<script src="script.js" defer></script>
 </head>
 
 <html>
@@ -12,13 +13,10 @@
 <div class="div1">
 <div class="div2">
 
-
-<form>
-<label for="pswd">ENTER PASSWORD</label>
+<form onsubmit="checkPswd(); return false;">
+    <input type="password" id="pswd" placeholder="Enter password" class="box">
 <br>
-<input class="box" type="password" id="pswd">
-<br>
-<input class="confirm" type="button" value="SUBMIT" onclick="checkPswd();" />
+    <button class="confirm" type="submit">Submit</button>
 </form>
 
 </div>
