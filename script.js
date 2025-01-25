@@ -1,6 +1,6 @@
 type="text/javascript"
     function checkPswd() {
-        var confirmPassword = "im an awkward guy";
+        var confirmPassword = "ada";
         var password = document.getElementById("pswd").value;
         console.log("Password entered:", password);
         if (password == confirmPassword) {

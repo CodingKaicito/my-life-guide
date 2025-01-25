@@ -4,6 +4,15 @@ body {
   display: table;
 }
 
+p {
+  font-size: 15px;
+  padding-top: 50%;
+}
+
+form {
+  padding-top: 50%;
+}
+
 .div1 {
   height: 100%;
   width: 100%;
