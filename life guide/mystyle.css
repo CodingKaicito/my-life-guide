@@ -13,6 +13,8 @@ b {
 
 body {
   padding-top: 60px; /* Adjust to match your navbar's height */
+  max-width: 1200px; /* Prevents paragraphs from becoming too wide */
+  margin: 1 auto;
 }
 
 a:link {
@@ -108,12 +110,8 @@ nav .nav_links li a:hover {
   color: #000000; /* Change text color on hover */
 }
 
-    .content {
-    max-width: 1440px;
-    margin: auto;
-    text-align: justify;
+    .intro {
     padding: 3rem 0;
-    line-height: 1.8rem;
 }
 
 .social-icons {
@@ -133,4 +131,47 @@ nav .nav_links li a:hover {
 .social-icons a:hover img {
   transform: scale(1.1);
   filter: brightness(0.5) invert(0); /* Slight color shift */
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #000000;
+  color: #fefefe;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: Chalkduster;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #000000;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.collapsible:after {
+  content: '+';
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  float: right;
+  margin-right: 5px;
+}
+
+.active:after {
+  content: '-';
+}
+
+button {
+  font-size: 20px;
 }
