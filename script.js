@@ -4,7 +4,7 @@ type="text/javascript"
         var password = document.getElementById("pswd").value;
         console.log("Password entered:", password);
         if (password == confirmPassword) {
-            window.location="life guide/index.html";
+            window.location="lifeguide/index.html";
         }
         else{
             alert("Passwords do not match.");
