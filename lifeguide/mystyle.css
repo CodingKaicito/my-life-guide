@@ -23,6 +23,18 @@ a:link {
     text-decoration: underline;
 }
 
+a:visited {
+  color: rgb(255, 255, 255); /* Same as unvisited link color */
+}
+
+a:hover {
+  color: red; /* Color when hovering */
+}
+
+a:active {
+  color: green; /* Color when the link is active (clicked) */
+}
+
   table {
     text-align: center;
     border: 1px solid rgb(255, 255, 255);
