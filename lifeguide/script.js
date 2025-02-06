@@ -30,3 +30,8 @@ coll[i].addEventListener("click", function() {
     }
 });
 }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+    document.querySelector(".menu-content").classList.toggle("show");
+}
