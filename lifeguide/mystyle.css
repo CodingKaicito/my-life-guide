@@ -21,6 +21,11 @@ b {
   word-spacing: 10px;
 }
 
+img {
+  width: 75%; 
+  max-width: 400px; 
+}
+
 body {
   padding-top: 60px; /* Adjust to match your navbar's height */
   max-width: 1200px; /* Prevents paragraphs from becoming too wide */
